@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+#Container{
+width: 100vw;
+height: auto;
+background-color: rgb(168, 168, 168);
+
+
+}
+
+nav{
+  
+  height: 10px;  
+}
