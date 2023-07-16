@@ -1,15 +1,130 @@
-body{
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    overflow: auto;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(46, 46, 46);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(90, 90, 90);
+    /* color of the scroll thumb */
+    border-radius: 50px;
+    /* roundness of the scroll thumb */
+    border: 1px solid rgb(68, 68, 68);
+    /* creates padding around scroll thumb */
+}
+
+#Container {
+    width: 100%;
+    height: auto;
+    background-image: url("../../Assets/20220424095857_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#controllCloseSideBar{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: none;
+}
+header {
+    height: 7.5vh;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    position: fixed;
+}
+
+#sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s ease;
+    z-index: 1;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
-#Container{
-width: 100vw;
-height: auto;
-background-color: rgb(168, 168, 168);
 
-
+#sidebar li {
+    padding: 10px;
 }
 
-nav{
-  
-  height: 10px;  
+#sidebar li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles for the menu button */
+#menuBtn {
+    display: block; /* Hide the button on larger screens */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Show the sidebar when the button is clicked */
+
+header #titlePage {
+    width: 10%;
+    height: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+#content {
+    background-color: rgba(41, 41, 41, .8);
+    padding-top: 7.5vh;
+    height: 3000px;
+    min-height: 92.5vh;
+    width: 75em;
+}
+@media (max-width: 1300px) {
+    #content {
+        background-color: rgba(41, 41, 41, .8);
+        padding-top: 7.5vh;
+        height: 3000px;
+        min-height: 92.5vh;
+        width: 100%;
+    }
+}
+
+
+section {
+    padding-left: 10px;
+}
+
+#section-1 {
+    height: 100px;
+    width: calc(100% - 10px);
 }
