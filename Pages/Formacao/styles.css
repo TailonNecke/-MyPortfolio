@@ -33,8 +33,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-#controllCloseSideBar {
+#controllCloseSideBar{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.1);
     width: 100vw;
@@ -42,7 +41,6 @@ body {
     z-index: 1;
     display: none;
 }
-
 header {
     height: 7.5vh;
     width: 100%;
@@ -74,8 +72,7 @@ header {
     width: 100%;
     cursor: pointer;
 }
-
-#sidebar li div {
+#sidebar li div{
     height: 100%;
     width: 100%;
     display: flex;
@@ -83,8 +80,8 @@ header {
 }
 
 
-#sidebar li :hover {
-    background-color: rgba(255, 255, 255, 0.2);
+ #sidebar li :hover{
+    background-color: rgba(255,255,255, 0.2);
 }
 
 #sidebar li a {
@@ -93,13 +90,14 @@ header {
 }
 
 #menuBtn {
-    display: block;
+    display: block; 
     font-size: 24px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
 }
+
 
 header #titlePage {
     width: 10%;
@@ -114,7 +112,6 @@ header #titlePage {
     justify-content: center;
     position: absolute;
 }
-
 #content {
     background-color: rgba(41, 41, 41, .8);
     padding-top: 7.5vh;
@@ -122,7 +119,6 @@ header #titlePage {
     min-height: 92.5vh;
     width: 75em;
 }
-
 @media (max-width: 1300px) {
     #content {
         background-color: rgba(41, 41, 41, .8);
@@ -133,16 +129,14 @@ header #titlePage {
     }
 }
 
+
 section {
     padding-left: 10px;
 }
 
 #section-1 {
-    height: 20px;
-    width: calc(100% - 10px);
-}
-#section-2 {
-    height: 100px;
+    padding-top: 10px;
+    height: auto;
     width: calc(100% - 10px);
 }
 

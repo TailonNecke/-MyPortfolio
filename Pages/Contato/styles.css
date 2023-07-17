@@ -101,6 +101,7 @@ header {
     cursor: pointer;
 }
 
+
 header #titlePage {
     width: 10%;
     height: 50%;
@@ -133,18 +134,52 @@ header #titlePage {
     }
 }
 
+
 section {
     padding-left: 10px;
 }
 
 #section-1 {
-    height: 20px;
+    height: auto;
     width: calc(100% - 10px);
 }
+
+#section-1 input {
+    width: 50%;
+    height: 25px;
+    border-radius: 7.5px;
+}
+
 #section-2 {
-    height: 100px;
+    height: auto;
     width: calc(100% - 10px);
 }
+
+#section-2 textarea {
+    width: 50%;
+    height: 100px;
+    border-radius: 7.5px;
+}
+
+#section-3 {
+    padding-top: 10px;
+    height: auto;
+    width: calc(100% - 10px);
+}
+
+#section-3 button{
+   background-color: rgb(56, 129, 225);
+   color: white;
+   border-color: white;
+   border-radius: 5px;
+   border-width: 1px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#section-3 :hover {
+    background-color: rgb(159, 202, 255);
+ }
 
 footer {
     width: 75em;
@@ -152,6 +187,7 @@ footer {
     color: #fff;
     padding: 20px 0;
 }
+
 @media (max-width: 1300px) {
     footer {
         width: 100%;
@@ -160,6 +196,7 @@ footer {
         padding: 20px 0;
     }
 }
+
 .footer-content {
     display: flex;
     justify-content: center;
